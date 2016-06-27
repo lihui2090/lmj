@@ -26,6 +26,19 @@ int lmj_bs::set_food_bs(double value)
 	food_bs_cur=value;
 	return 0;
 }
+
+int lmj_bs::get_food_bs_ctr(double * value)
+{
+
+
+		*value= (food_bs_cur-food_bs_min)/(food_bs_max-food_bs_min);
+
+	// 
+
+	return 0;
+
+
+}
 int lmj_bs::get_water_bs(double * value)
 {
 	*value=water_bs_cur;
@@ -35,6 +48,14 @@ int lmj_bs::set_water_bs(double value)
 {
 	water_bs_cur=value;
 	return 0;
+}
+
+int lmj_bs::get_water_bs_ctr(double * value)
+{
+	*value= (water_bs_cur-water_bs_min)/(water_bs_max-water_bs_min);
+	return 0;
+
+
 }
 int lmj_bs::get_tempature_bs(double * value)
 {
@@ -46,6 +67,12 @@ int lmj_bs::set_tempature_bs(double  value)
 	tempature_bs_cur=value;
 	return 0;
 }
+int lmj_bs::get_tempature_bs_ctr(double * value)
+{
+	*value= (tempature_bs_cur-tempature_bs_min)/(tempature_bs_max-tempature_bs_min);
+	return 0;
 
+
+}
 
 
