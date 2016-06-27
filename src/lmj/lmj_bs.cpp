@@ -1,5 +1,5 @@
 // body status cpp
-lmj_bs::lmj_bs()
+void lmj_bs::lmj_bs()
 {
 	 food_bs_cur=100;
 	 food_bs_max=150;
@@ -21,20 +21,16 @@ int lmj_bs::get_food_bs(double * value)
 	*value=food_bs_cur;
 	return 0;
 }
-int lmj_bs::set_food_bs(double value)
+int lmj_bs::set_food_bs(double food_input_rate)
 {
-	food_bs_cur=value;
+	food_bs_cur=food_bs_cur-food_bs_consume_rate-tempature_bs_food_consume_rate+food_input_rate;
 	return 0;
 }
 
 int lmj_bs::get_food_bs_ctr(double * value)
 {
 
-
-		*value= (food_bs_cur-food_bs_min)/(food_bs_max-food_bs_min);
-
-	// 
-
+	*value= (food_bs_cur-food_bs_min)/(food_bs_max-food_bs_min);
 	return 0;
 
 
@@ -44,9 +40,9 @@ int lmj_bs::get_water_bs(double * value)
 	*value=water_bs_cur;
 	return 0;
 }
-int lmj_bs::set_water_bs(double value)
+int lmj_bs::set_water_bs(double water_input_rate)
 {
-	water_bs_cur=value;
+	water_bs_cur=water_bs_cur-water_bs_consume_rate-tempature_bs_water_consume_rate+water_input_rate;
 	return 0;
 }
 
@@ -62,9 +58,9 @@ int lmj_bs::get_tempature_bs(double * value)
 	*value=tempature_bs_cur;
 	return 0;
 }
-int lmj_bs::set_tempature_bs(double  value)
+int lmj_bs::set_tempature_bs(double  tempature_input_rate)
 {
-	tempature_bs_cur=value;
+	tempature_bs_cur=tempature_bs_cur+tempature_bs_rate+tempature_input_rate;
 	return 0;
 }
 int lmj_bs::get_tempature_bs_ctr(double * value)

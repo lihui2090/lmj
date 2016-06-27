@@ -1,6 +1,6 @@
 // control model cpp
 
-lmj_control::lmj_control()
+void lmj_control::lmj_control()
 {
 
 	 food_ctr=0;
