@@ -1,9 +1,10 @@
 // mem h
-
+using namespace std;
+#include <fstream>
 class lmj_mem
 {
+	fstream memfile;
 
-	std::fstream memfile;
 	struct memdatast
 	{
 		int time_value;
