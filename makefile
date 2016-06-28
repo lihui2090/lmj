@@ -1,4 +1,4 @@
 all:
-	cd ./src/lmj/  ;$(MAKE);
+	 cd ./src/lmj/ ; ${MAKE} ;
 clean: 
-	@ cd ./src/lmj/ ; make clean; cd ./build ;rm -rf *; 
+	@ cd ./src/lmj/ ; make clean;  
