@@ -21,7 +21,7 @@ class lmj_mem
 		double tempature_cur;
 
 		double all_as;
-	}mem_data;
+	}mem_data , remem_data_one , remem_data_two;
 
 public:
 	lmj_mem();
