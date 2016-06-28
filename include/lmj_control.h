@@ -26,4 +26,4 @@ public:
 	int calculate_tempature_ctr(double tempature_input, double bs_tempature_st, double *value);
 
 
-}
+};

@@ -15,4 +15,4 @@ public:
 	int get_all_as( double * value);
 	int set_all_as(double value);
 
-}
+};

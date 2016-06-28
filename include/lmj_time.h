@@ -10,5 +10,5 @@ public :
 	int get_time(int * value);
 
 
-}
+};
 

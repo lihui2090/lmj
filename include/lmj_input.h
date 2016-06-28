@@ -16,4 +16,4 @@ public:
 	int get_tempature(double * value);
 
 
-}
+};

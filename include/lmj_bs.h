@@ -35,4 +35,4 @@ public:
 	int get_tempature_bs_ctr(double * value);
 
 
-}
+};
