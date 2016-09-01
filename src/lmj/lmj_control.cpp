@@ -7,7 +7,9 @@ lmj_control::lmj_control()
 	 tempature_ctr=1;
 
 }
-
+lmj_control::~lmj_control()
+{
+}
 int lmj_control::set_food_ctr(double value )
 {
 	food_ctr=value;

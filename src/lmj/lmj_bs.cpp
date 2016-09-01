@@ -16,7 +16,9 @@ lmj_bs::lmj_bs()
 
 }
 
-
+lmj_bs::~lmj_bs()
+{
+}
 int lmj_bs::get_food_bs(double * value)
 {
 	*value=food_bs_cur;

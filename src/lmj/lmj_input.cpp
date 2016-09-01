@@ -12,7 +12,9 @@ lmj_input::lmj_input(void)
 	tempature_input_min=-10;
 	tempature_input_max=40;
 }
-
+lmj_input::~lmj_input(void)
+{
+}
 int lmj_input::get_food(double * value)
 {
 	*value =food_input;

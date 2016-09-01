@@ -6,6 +6,9 @@ lmj_time::lmj_time()
 
 }
 
+lmj_time::~lmj_time()
+{
+}
 int lmj_time::set_time(int value)
 {
 

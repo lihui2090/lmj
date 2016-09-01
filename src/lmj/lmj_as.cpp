@@ -8,6 +8,11 @@ lmj_as::lmj_as(void)
 	all_as_live=1;
 
 }
+lmj_as::~lmj_as(void)
+{
+
+}
+
 int lmj_as::set_all_as(double value)
 {
 	all_as_cur=value;
